@@ -853,7 +853,11 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+
+  border-radius: 20px;
 }
+
+
 
 .work-box:hover img {
   transform: scale(1.3);
@@ -861,6 +865,8 @@ a:hover {
 
 .work-img {
   display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   overflow: hidden;
 }
 
