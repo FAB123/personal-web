@@ -543,17 +543,18 @@
   <audio id="bg-sound" loop>
     <source src="assets/sound/audio.mp3">
   </audio>
-<button onclick="pause_sond()">Pause</button>
+
+  <iframe src="assets/sound/audio.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+  </iframe> 
+
   <script>
-    window.onload = function() {
-      var audio = document.getElementById("bg-sound");
-      audio.volume = 0.3;
-      audio.play()
-    }
-    function pause_sond(){
-      var audio = document.getElementById("bg-sound");
-      audio.play;
-    }
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#bg-sound').remove() // just to make sure that it will not have 2x audio in the background 
+  }
   </script>
 
   
