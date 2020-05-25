@@ -540,23 +540,15 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <iframe src="assets/sound/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+
   <audio id="bg-sound" autoplay loop>
     <source src="assets/sound/audio.mp3">
   </audio>
 
-  <iframe src="assets/sound/audio.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-  </iframe> 
 
   <script>
-    window.onload = function() {
-      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        if (!isChrome){
-            $('#iframeAudio').remove()
-        }
-        else {
-            $('#bg-sound').remove() // just to make sure that it will not have 2x audio in the background 
-        }
-    }
+ 
   </script>
 
   
