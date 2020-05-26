@@ -2,10 +2,9 @@
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
-$subject = $_POST["subject"];
+$Subject = $_POST["subject"];
  
 $EmailTo = "fysalkt@gmail.com";
-$Subject = "New Message Received";
  
 // prepare email body text
 $Body .= "Name: ";
